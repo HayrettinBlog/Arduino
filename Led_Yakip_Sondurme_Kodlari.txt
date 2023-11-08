@@ -1,0 +1,14 @@
+int led = 2; //2. pine baðladýðýmýz ledimzi led ismi ile tanýmladýk.
+
+void setup()// setup kýsmýna yazýlan kodlar 1 defa çalýþýr
+{
+  pinMode(led, OUTPUT);//ledin bir çýkýþ elemaný olduðunu belirtiyoruz.
+}
+
+void loop()// loop kýsmýna yazýlan kodlar sürekli tekrar eder
+{
+  digitalWrite(led, HIGH);//lede hýgh komutu ile enerji veriyoruz.
+  delay(1000); //delay komutu ile 1 saniye bekletiyoruz
+  digitalWrite(led, LOW);//ledin enerjisini low komutu ile kesiyoruz yani kapatýyoruz.
+  delay(1000); //delay komutu ile 1 saniye bekletiyoruz
+}
